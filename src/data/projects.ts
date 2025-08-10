@@ -2,38 +2,6 @@ import { Project } from '@/types';
 
 export const featuredProjects: Project[] = [
   {
-    id: "wordwars",
-    title: "WordWars",
-    description: "Multiplayer word game achieving $70K peak daily revenue with AI-based adaptive adversary system",
-    longDescription: "Led technical development of WordWars as Senior Software Engineer, taking it from concept to $70K peak daily revenue. Built sophisticated AI-based adaptive adversary system using Branch and Bound algorithms with memory-optimized Trie structures. Implemented real-time PvP communication and chat systems supporting thousands of concurrent users.",
-    technologies: ["Unity", "C#", "Golang", "MongoDB", "Redis", "Branch and Bound algorithms", "Trie structures", "Real-time networking"],
-    features: [
-      "AI-based adaptive adversary system with advanced algorithms",
-      "Real-time PvP communication and chat systems",
-      "Memory-optimized Trie structures for word validation",
-      "Scalable backend supporting thousands of concurrent users",
-      "Automated content generation tools reducing designer workload by 40%"
-    ],
-    businessImpact: "$70K peak daily revenue, leading PlaySimple's word game category with millions of players worldwide",
-    image: "/projects/wordwars.jpg"
-  },
-  {
-    id: "destination-solitaire",
-    title: "Destination Solitaire",
-    description: "Travel-themed solitaire game built from conception, leading 5-developer team for 2+ years",
-    longDescription: "Designed and developed Destination Solitaire from conception as Principal Software Engineer. Led a 5-developer team for over 2 years, creating an innovative twist on classic solitaire where players visit different cities by completing puzzles. Implemented cross-platform architecture and seamless progression systems.",
-    technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Cross-platform architecture", "Real-time sync"],
-    features: [
-      "Travel-themed progression system visiting different cities",
-      "Cross-platform synchronization across iOS and Android",
-      "Stamp collection and achievement systems",
-      "Social features for competing with friends",
-      "Optimized performance for low-end devices"
-    ],
-    businessImpact: "Successfully launched and maintained for 2+ years with consistent user engagement and positive reviews",
-    image: "/projects/destination-solitaire.jpg"
-  },
-  {
     id: "tile-match-empire",
     title: "Tile Match & Tile Empire",
     description: "Current projects generating $30K daily revenue with 225K DAU and 99.5% stability",
@@ -47,7 +15,7 @@ export const featuredProjects: Project[] = [
       "Cross-game progression and reward systems"
     ],
     businessImpact: "$30K combined daily revenue with 225K daily active users, maintaining 99.5% stability targets",
-    image: "/projects/tile-match.jpg"
+    image: "/projects/tile-match.webp"
   },
   {
     id: "central-login-system",
@@ -66,6 +34,38 @@ export const featuredProjects: Project[] = [
     image: "/projects/login-system.jpg"
   },
   {
+    id: "destination-solitaire",
+    title: "Destination Solitaire",
+    description: "Travel-themed solitaire game built from conception, leading 5-developer team for 2+ years",
+    longDescription: "Designed and developed Destination Solitaire from conception as Principal Software Engineer. Led a 5-developer team for over 2 years, creating an innovative twist on classic solitaire where players visit different cities by completing puzzles. Implemented cross-platform architecture and seamless progression systems.",
+    technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Cross-platform architecture", "Real-time sync"],
+    features: [
+      "Travel-themed progression system visiting different cities",
+      "Cross-platform synchronization across iOS and Android",
+      "Stamp collection and achievement systems",
+      "Social features for competing with friends",
+      "Optimized performance for low-end devices"
+    ],
+    businessImpact: "Successfully launched and maintained for 2+ years with consistent user engagement and positive reviews",
+    image: "/projects/destination-solitaire.webp"
+  },
+  {
+    id: "wordwars",
+    title: "WordWars",
+    description: "Multiplayer word game achieving $70K peak daily revenue with AI-based adaptive adversary system",
+    longDescription: "Led technical development of WordWars as Senior Software Engineer, taking it from concept to $70K peak daily revenue. Built sophisticated AI-based adaptive adversary system using Branch and Bound algorithms with memory-optimized Trie structures. Implemented real-time PvP communication and chat systems supporting thousands of concurrent users.",
+    technologies: ["Unity", "C#", "Golang", "MongoDB", "Redis", "Branch and Bound algorithms", "Trie structures", "Real-time networking"],
+    features: [
+      "AI-based adaptive adversary system with advanced algorithms",
+      "Real-time PvP communication and chat systems",
+      "Memory-optimized Trie structures for word validation",
+      "Scalable backend supporting thousands of concurrent users",
+      "Automated content generation tools reducing designer workload by 40%"
+    ],
+    businessImpact: "$70K peak daily revenue, leading PlaySimple's word game category with millions of players worldwide",
+    image: "/projects/wordwars.png"
+  },
+  {
     id: "daily-themed-crossword",
     title: "Daily Themed Crossword", 
     description: "Multi-platform crossword game with automated content generation reducing creation time by 10%",
@@ -79,6 +79,6 @@ export const featuredProjects: Project[] = [
       "Scalable content management system"
     ],
     businessImpact: "Successful multi-platform launch with 10% reduction in content creation time and positive user reception",
-    image: "/projects/daily-crossword.jpg"
+    image: "/projects/daily-crossword.png"
   }
 ];

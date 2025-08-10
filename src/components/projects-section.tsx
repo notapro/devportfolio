@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github, Zap, Users, DollarSign, Code } from "lucide-react";
+import Image from "next/image";
 import { featuredProjects } from "@/data/projects";
 
 export function ProjectsSection() {
@@ -60,9 +61,22 @@ export function ProjectsSection() {
               whileHover={{ y: -5 }}
             >
               {/* Project Image */}
-              <div className="h-48 bg-gradient-to-br from-blue-500 to-purple-600 relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/20" />
-                <div className="absolute bottom-4 left-4 right-4">
+              <div className="h-48 relative overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600">
+                {project.image ? (
+                  <>
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-black/40" />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 bg-black/20" />
+                )}
+                <div className="absolute bottom-4 left-4 right-4 z-10">
                   <h3 className="text-xl font-bold text-white mb-2">
                     {project.title}
                   </h3>
