@@ -2,63 +2,78 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
-    id: "pse-principal",
-    title: "Principal Software Engineer",
+    id: "principal-engineer-2",
+    title: "Principal Software Engineer - 2",
     company: "PlaySimple Games",
-    period: "2023 - Present",
-    description: "Leading engineering initiatives and architecture decisions for multiple mobile gaming products reaching millions of users.",
-    technologies: ["Unity", "C#", "Node.js", "TypeScript", "AWS", "Docker", "Kubernetes", "Python", "Go"],
+    period: "July 2024 - Present",
+    description: "Leading teams across 2 successful titles with combined $30K+ daily revenue and 225K+ DAU. Building modular components promoting reusability between games, reducing development time by 30%.",
+    technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Firebase Analytics", "Jenkins"],
     achievements: [
-      "Led technical architecture for 3 major game releases generating $50M+ revenue",
-      "Mentored 15+ engineers across multiple teams and established engineering best practices",
-      "Reduced deployment time by 70% through CI/CD pipeline optimization",
-      "Implemented microservices architecture improving system scalability by 300%",
-      "Spearheaded adoption of modern tech stack across 5 game studios"
+      "Leading teams for Tile Match ($30K daily revenue, 225K DAU) and Tile Empire",
+      "Maintaining 99.5% stability target with 5-second load times and 75 FPS performance",
+      "Building modular components reducing development time by 30%",
+      "Mentoring technical artists and developers on Unity best practices",
+      "Collaborating with senior leadership on sprint planning and development timelines"
     ]
   },
   {
-    id: "pse-senior",
+    id: "principal-engineer-1",
+    title: "Principal Software Engineer - 1",
+    company: "PlaySimple Games",
+    period: "July 2020 - July 2024",
+    description: "Built scalable login system serving 3M+ daily active users across entire PlaySimple ecosystem. Led Destination Solitaire development and WordWars recovery operations.",
+    technologies: ["Unity", "C#", "Golang", "ScyllaDB", "MongoDB", "Redis", "AWS", "DigitalOcean", "Firebase"],
+    achievements: [
+      "Built enterprise-grade login system serving 3M+ daily active users with 99.9% uptime",
+      "Led WordWars recovery, improving crash-free rate from 97% to 99.3% within one month",
+      "Designed and developed Destination Solitaire from conception, leading 5-developer team for 2+ years",
+      "Architected cross-game quest system enabling seamless user progress tracking across titles",
+      "Migrated infrastructure from AWS to DigitalOcean, optimizing costs and performance"
+    ]
+  },
+  {
+    id: "senior-engineer",
     title: "Senior Software Engineer",
     company: "PlaySimple Games",
-    period: "2020 - 2023",
-    description: "Developed and maintained core game systems, backend services, and led feature development for flagship titles.",
-    technologies: ["Unity", "C#", "Node.js", "MongoDB", "Redis", "AWS Lambda", "PostgreSQL"],
+    period: "July 2017 - July 2020",
+    description: "Technical lead for WordWars achieving $70K peak daily revenue. Led team of 4 developers and built AI-based adaptive adversary system with advanced algorithms.",
+    technologies: ["Unity", "C#", "Golang", "MongoDB", "Redis", "Branch and Bound algorithms", "Trie structures"],
     achievements: [
-      "Built real-time multiplayer system handling 1M+ concurrent users",
-      "Optimized game performance resulting in 40% reduction in crash rates",
-      "Designed and implemented analytics pipeline processing 100M+ daily events",
-      "Led cross-functional team of 8 developers for major game feature launches",
-      "Established code review processes improving code quality by 60%"
+      "Led WordWars to $70K peak daily revenue as technical lead",
+      "Built AI-based adaptive adversary system using Branch and Bound algorithms with memory-optimized Trie structures",
+      "Implemented real-time PvP communication and chat systems supporting thousands of concurrent users",
+      "Achieved 50% reduction in game load times through comprehensive memory optimizations",
+      "Built automated content generation tools reducing designer workload by 40%"
     ]
   },
   {
-    id: "pse-software",
+    id: "software-engineer",
     title: "Software Engineer",
     company: "PlaySimple Games",
-    period: "2018 - 2020",
-    description: "Focused on game client development, performance optimization, and implementing engaging game mechanics.",
-    technologies: ["Unity", "C#", "Firebase", "REST APIs", "Git", "Jenkins"],
+    period: "January 2017 - July 2017",
+    description: "Spearheaded Daily Themed Crossword development and multi-platform launch. Guided team of 3 developers and created crossword grid generator reducing content creation time by 10%.",
+    technologies: ["Unity", "C#", "Cocos2d-JS", "Golang", "Redis", "MongoDB", "Data replication tools"],
     achievements: [
-      "Developed core gameplay features for 2 top-grossing mobile games",
-      "Implemented A/B testing framework improving user engagement by 25%",
-      "Optimized memory usage reducing app size by 30%",
-      "Built automated testing suite covering 80% of critical game flows",
-      "Collaborated with design team to implement innovative UI/UX solutions"
+      "Spearheaded Daily Themed Crossword development and successful multi-platform launch",
+      "Guided team of 3 developers in feature development and release management",
+      "Created crossword grid generator, reducing content creation time by 10%",
+      "Developed data replication tool for safe application-level data transfer across all PlaySimple titles",
+      "Promoted to Senior Engineer within 6 months due to exceptional performance"
     ]
   },
   {
-    id: "pse-junior",
-    title: "Junior Software Engineer",
+    id: "associate-engineer",
+    title: "Associate Software Engineer",
     company: "PlaySimple Games",
-    period: "2016 - 2018",
-    description: "Started career in mobile game development, learning Unity and game development fundamentals while contributing to live games.",
-    technologies: ["Unity", "C#", "JSON", "SQLite", "Version Control"],
+    period: "July 2016 - January 2017",
+    description: "Started career in mobile game development. Worked on Jungle Rumble using Cocos2d-JS and developed level-based leaderboard system using modern backend technologies.",
+    technologies: ["Cocos2d-JS", "Unity", "C#", "Golang", "Redis", "MongoDB", "Git"],
     achievements: [
-      "Successfully shipped first mobile game within 6 months of joining",
-      "Implemented game monetization features increasing ARPU by 20%",
-      "Fixed 200+ bugs and improved overall game stability",
-      "Learned and mastered Unity engine and mobile development best practices",
-      "Contributed to daily active user growth from 100K to 1M+"
+      "Successfully contributed to Jungle Rumble game development using Cocos2d-JS engine",
+      "Developed level-based leaderboard system using Golang, Redis, and MongoDB",
+      "Collaborated effectively with cross-functional teams including product managers, designers, and artists",
+      "Rapid learning curve - promoted to Software Engineer within 6 months",
+      "Established foundation in game development and backend systems architecture"
     ]
   }
 ];
