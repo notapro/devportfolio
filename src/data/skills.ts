@@ -3,38 +3,84 @@ import { Skill } from '@/types';
 export const skills: Skill[] = [
   {
     category: "Programming Languages",
-    items: ["C# (8+ years)", "Golang (7+ years)", "Java (9+ years)", "Python", "JavaScript", "Objective-C", "C++"]
+    items: [
+      { name: "C#", proficiency: 95 },
+      { name: "TypeScript", proficiency: 90 },
+      { name: "JavaScript", proficiency: 88 },
+      { name: "Python", proficiency: 85 },
+      { name: "Go", proficiency: 90 },
+      { name: "Java", proficiency: 80 },
+      { name: "SQL", proficiency: 85 }
+    ]
   },
   {
-    category: "Game Development & Unity",
-    items: ["Unity Engine (8+ years)", "2D Casual Puzzle Games", "3D Visual Elements", "Performance Optimization", "Memory Management", "Mobile Game Development", "Cross-platform Development"]
+    category: "Game Development",
+    items: [
+      { name: "Unity", proficiency: 95 },
+      { name: "Game Design", proficiency: 88 },
+      { name: "Performance Optimization", proficiency: 92 },
+      { name: "Mobile Gaming", proficiency: 95 },
+      { name: "Multiplayer Systems", proficiency: 90 },
+      { name: "Game Analytics", proficiency: 85 }
+    ]
   },
   {
     category: "Backend & Infrastructure",
-    items: ["Microservices Architecture", "Scalable Systems Design", "API Development", "Distributed Systems", "Real-time Communication", "PvP Systems", "High-performance Servers"]
+    items: [
+      { name: "Node.js", proficiency: 90 },
+      { name: "Microservices", proficiency: 92 },
+      { name: "REST APIs", proficiency: 93 },
+      { name: "GraphQL", proficiency: 78 },
+      { name: "Docker", proficiency: 85 },
+      { name: "Kubernetes", proficiency: 80 },
+      { name: "AWS", proficiency: 88 },
+      { name: "Serverless", proficiency: 82 }
+    ]
   },
   {
-    category: "Databases & Storage",
-    items: ["ScyllaDB", "MongoDB", "Redis", "Firebase", "Database Optimization", "Indexing", "Data Persistence Systems"]
+    category: "Databases",
+    items: [
+      { name: "PostgreSQL", proficiency: 88 },
+      { name: "MongoDB", proficiency: 90 },
+      { name: "Redis", proficiency: 92 },
+      { name: "ClickHouse", proficiency: 75 },
+      { name: "Firebase", proficiency: 85 },
+      { name: "SQLite", proficiency: 88 }
+    ]
   },
   {
-    category: "Cloud & DevOps",
-    items: ["AWS", "DigitalOcean", "CloudFlare", "Jenkins", "Unity Cloud Build", "Git", "Infrastructure Migration", "Cost Optimization"]
-  },
-  {
-    category: "Algorithms & Optimization",
-    items: ["Branch and Bound Algorithms", "Memory-Optimized Trie Structures", "Performance Tuning", "Garbage Collection Management", "Lazy Loading", "Object Pools"]
+    category: "DevOps & Tools",
+    items: [
+      { name: "Git", proficiency: 95 },
+      { name: "Jenkins", proficiency: 85 },
+      { name: "GitHub Actions", proficiency: 88 },
+      { name: "Docker", proficiency: 85 },
+      { name: "Kubernetes", proficiency: 80 },
+      { name: "Monitoring", proficiency: 82 },
+      { name: "CI/CD", proficiency: 90 },
+      { name: "Infrastructure as Code", proficiency: 78 }
+    ]
   },
   {
     category: "Leadership & Management",
-    items: ["Team Leadership (5+ developers)", "Technical Mentoring", "Crisis Management", "Cross-functional Collaboration", "Sprint Planning", "Code Reviews", "Best Practices"]
+    items: [
+      { name: "Team Leadership", proficiency: 92 },
+      { name: "Technical Mentoring", proficiency: 90 },
+      { name: "Architecture Design", proficiency: 95 },
+      { name: "Code Review", proficiency: 93 },
+      { name: "Agile/Scrum", proficiency: 88 },
+      { name: "Cross-functional Collaboration", proficiency: 90 }
+    ]
   },
   {
-    category: "Analytics & Business",
-    items: ["Firebase Analytics", "A/B Testing", "Performance Metrics", "Business Impact Analysis", "Revenue Optimization", "User Engagement", "KPI Tracking"]
-  },
-  {
-    category: "Competitive Programming",
-    items: ["ACM ICPC Regional Qualifier", "Data Structures", "Algorithm Design", "CodeChef", "CodeForces", "Problem Solving"]
+    category: "Analytics & Data",
+    items: [
+      { name: "Game Analytics", proficiency: 88 },
+      { name: "A/B Testing", proficiency: 85 },
+      { name: "Data Pipelines", proficiency: 80 },
+      { name: "Business Intelligence", proficiency: 78 },
+      { name: "Performance Metrics", proficiency: 92 },
+      { name: "User Behavior Analysis", proficiency: 85 }
+    ]
   }
 ];

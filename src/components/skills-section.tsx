@@ -105,22 +105,25 @@ export function SkillsSection() {
                   variants={containerVariants}
                   className="space-y-3"
                 >
-                  {skillCategory.items.map((skill, skillIndex) => (
+                  {skillCategory.items.map((skillItem, skillIndex) => (
                     <motion.div
-                      key={skill}
+                      key={skillItem.name}
                       variants={skillVariants}
                       className="group/skill"
                     >
                       <div className="flex items-center justify-between mb-1">
                         <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                          {skill}
+                          {skillItem.name}
+                        </span>
+                        <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+                          {skillItem.proficiency}%
                         </span>
                       </div>
                       <div className="h-2 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
                         <motion.div
                           className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
                           initial={{ width: 0 }}
-                          whileInView={{ width: `${85 + Math.random() * 15}%` }}
+                          whileInView={{ width: `${skillItem.proficiency}%` }}
                           transition={{ 
                             duration: 1, 
                             delay: categoryIndex * 0.1 + skillIndex * 0.05,

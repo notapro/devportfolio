@@ -21,9 +21,14 @@ export interface Project {
   githubUrl?: string;
 }
 
+export interface SkillItem {
+  name: string;
+  proficiency: number; // 0-100
+}
+
 export interface Skill {
   category: string;
-  items: string[];
+  items: SkillItem[];
 }
 
 export interface PersonalInfo {
