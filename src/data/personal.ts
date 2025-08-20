@@ -3,10 +3,12 @@ import { PersonalInfo } from '@/types';
 export const personalInfo: PersonalInfo = {
   name: "Prakhar Sethi",
   title: "Principal Software Engineer - 2",
-  tagline: "Building scalable systems serving 3M+ users & leading engineering excellence",
-  bio: "Principal Software Engineer - 2 with 9+ years of experience building scalable mobile games at PlaySimple Games. Led teams delivering games with $100K+ combined daily revenue, architected systems serving 3M+ daily active users, and mentored 15+ engineers across multiple successful game launches.",
+  tagline: "Building scalable mobile games serving 3M+ users with 9+ years of engineering excellence",
+  bio: "Principal Software Engineer - 2 at PlaySimple Games with 9+ years of experience building scalable mobile games. Led teams delivering games with $100K+ combined daily revenue, architected systems serving 3M+ daily active users, and mentored 15+ engineers across multiple successful game launches. Expert in Unity, C#, Golang, and high-performance distributed systems with a proven track record of technical leadership and innovation.",
   location: "Bengaluru, Karnataka, India",
   email: "prakhar.sethi2@gmail.com",
+  phone: "+91-7338458677",
+  website: "https://www.prakharsethi.com",
   linkedin: "https://www.linkedin.com/in/prakharsethi/",
   github: "https://github.com/notapro",
   resumeUrl: "/resume-dir/Resume_Prakhar_Sethi.pdf"
