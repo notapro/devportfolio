@@ -3,46 +3,25 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, Download, MapPin } from "lucide-react";
 import { personalInfo } from "@/data/personal";
+import { AnimatedSection, AnimatedItem } from "./animated-section";
 
 export function ContactSection() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut" as const,
-      },
-    },
-  };
-
   const contactMethods = [
     {
       icon: Mail,
       label: "Email",
       value: personalInfo.email,
       href: `mailto:${personalInfo.email}`,
-      color: "text-red-600 dark:text-red-400",
-      bg: "bg-red-100 dark:bg-red-900/20",
+      color: "text-primary-600 dark:text-primary-400",
+      bg: "bg-gradient-to-br from-primary-100 to-primary-50 dark:from-primary-900/30 dark:to-primary-800/20",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect with me",
       href: personalInfo.linkedin,
-      color: "text-blue-600 dark:text-blue-400",
-      bg: "bg-blue-100 dark:bg-blue-900/20",
+      color: "text-accent-600 dark:text-accent-400",
+      bg: "bg-gradient-to-br from-accent-100 to-accent-50 dark:from-accent-900/30 dark:to-accent-800/20",
     },
     {
       icon: Github,
@@ -63,34 +42,23 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
+    <section id="contact" className="scroll-mt-20 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-accent-50/30 via-neutral-50 to-primary-50/30 dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900">
       <div className="max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            Let&apos;s Connect
+        <AnimatedSection className="text-center mb-16" direction="up" delay={0.1}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+            Let&apos;s{" "}
+            <span className="bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent">
+              Connect
+            </span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto leading-relaxed">
             Always interested in discussing new opportunities, technical challenges, or innovative projects in mobile gaming and beyond.
           </p>
-        </motion.div>
+        </AnimatedSection>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
+        <AnimatedSection direction="up" delay={0.2} stagger>
           {/* Contact Methods Grid */}
-          <motion.div
-            variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12"
-          >
+          <AnimatedItem className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {contactMethods.map((method) => (
               <motion.div
                 key={method.label}
@@ -106,7 +74,7 @@ export function ContactSection() {
                     className="block bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     <div className="flex items-center gap-4">
-                      <div className={`p-3 rounded-lg ${method.bg}`}>
+                      <div className={`p-3 rounded-xl shadow-soft ${method.bg}`}>
                         <method.icon className={`h-6 w-6 ${method.color}`} />
                       </div>
                       <div>
@@ -122,7 +90,7 @@ export function ContactSection() {
                 ) : (
                   <div className="bg-white dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-800 p-6 shadow-lg">
                     <div className="flex items-center gap-4">
-                      <div className={`p-3 rounded-lg ${method.bg}`}>
+                      <div className={`p-3 rounded-xl shadow-soft ${method.bg}`}>
                         <method.icon className={`h-6 w-6 ${method.color}`} />
                       </div>
                       <div>
@@ -138,13 +106,10 @@ export function ContactSection() {
                 )}
               </motion.div>
             ))}
-          </motion.div>
+          </AnimatedItem>
 
           {/* Call to Action */}
-          <motion.div
-            variants={itemVariants}
-            className="text-center bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-8 shadow-lg"
-          >
+          <AnimatedItem className="text-center bg-white/90 dark:bg-neutral-800/90 backdrop-blur-sm rounded-3xl border border-neutral-200/50 dark:border-neutral-700/50 p-8 shadow-medium">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
               Ready to collaborate?
             </h3>
@@ -176,13 +141,10 @@ export function ContactSection() {
                 Download Resume
               </motion.a>
             </div>
-          </motion.div>
+          </AnimatedItem>
 
           {/* Professional Summary */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-12 text-center"
-          >
+          <AnimatedItem className="mt-12 text-center">
             <div className="inline-flex items-center gap-8 flex-wrap justify-center text-sm text-gray-600 dark:text-gray-400">
               <span className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full" />
@@ -197,8 +159,8 @@ export function ContactSection() {
                 Mobile gaming expert
               </span>
             </div>
-          </motion.div>
-        </motion.div>
+          </AnimatedItem>
+        </AnimatedSection>
       </div>
     </section>
   );

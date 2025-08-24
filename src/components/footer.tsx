@@ -26,7 +26,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+    <footer className="bg-gradient-to-t from-neutral-100 to-neutral-50 dark:from-neutral-900 dark:to-neutral-800 border-t border-neutral-200 dark:border-neutral-700">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ export function Footer() {
         >
           {/* Logo */}
           <div className="mb-8">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent">
               {personalInfo.name}
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mt-2">
+            <p className="text-neutral-600 dark:text-neutral-400 mt-2">
               {personalInfo.title}
             </p>
           </div>
@@ -53,7 +53,7 @@ export function Footer() {
                 href={link.href}
                 target={link.href.startsWith('http') ? '_blank' : '_self'}
                 rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="p-3 rounded-full bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 shadow-lg hover:shadow-xl transition-all duration-300"
+                className="p-3 rounded-full bg-white dark:bg-neutral-800 text-neutral-600 dark:text-neutral-400 hover:text-primary-600 dark:hover:text-primary-400 shadow-soft hover:shadow-medium transition-all duration-300 border border-neutral-200/50 dark:border-neutral-700/50 hover:bg-primary-50 dark:hover:bg-primary-900/20"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -64,10 +64,10 @@ export function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="border-t border-gray-200 dark:border-gray-700 pt-8">
-            <p className="flex items-center justify-center gap-2 text-gray-600 dark:text-gray-400 text-sm">
+          <div className="border-t border-neutral-200 dark:border-neutral-700 pt-8">
+            <p className="flex items-center justify-center gap-2 text-neutral-600 dark:text-neutral-400 text-sm">
               © {currentYear} {personalInfo.name}. Built with
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
+              <Heart className="h-4 w-4 text-primary-500 fill-current animate-pulse-soft" />
               using Next.js, TypeScript & Tailwind CSS
             </p>
           </div>
@@ -78,13 +78,13 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="mt-8 flex justify-center items-center space-x-8 text-xs text-gray-500 dark:text-gray-500"
+            className="mt-8 flex justify-center items-center space-x-8 text-xs text-neutral-500 dark:text-neutral-500 bg-white/50 dark:bg-neutral-800/50 backdrop-blur-sm px-6 py-3 rounded-full border border-neutral-200/50 dark:border-neutral-700/50 shadow-soft"
           >
-            <span>9+ Years Experience</span>
-            <span>•</span>
-            <span>15M+ Downloads</span>
-            <span>•</span>
-            <span>$85M+ Revenue</span>
+            <span className="font-medium">9+ Years Experience</span>
+            <span className="text-primary-400">•</span>
+            <span className="font-medium">15M+ Downloads</span>
+            <span className="text-accent-400">•</span>
+            <span className="font-medium">$85M+ Revenue</span>
           </motion.div>
         </motion.div>
       </div>

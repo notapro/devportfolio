@@ -37,14 +37,14 @@ export function Header() {
 
   return (
     <motion.header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/90 dark:bg-gray-950/90 backdrop-blur-md border-b border-gray-200/20 dark:border-gray-800/20"
+          ? "bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl border-b border-neutral-200/30 dark:border-neutral-700/30 shadow-soft"
           : "bg-transparent"
       }`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const }}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -54,31 +54,48 @@ export function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <button
+            <motion.button
               onClick={() => handleNavClick("#home")}
-              className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              className="text-xl font-bold bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent relative"
+              whileHover={{ 
+                scale: 1.05,
+                filter: "hue-rotate(10deg)"
+              }}
+              whileTap={{ scale: 0.95 }}
             >
+              <motion.span
+                className="absolute inset-0 bg-gradient-to-r from-primary-200 to-accent-200 dark:from-primary-800 dark:to-accent-800 rounded-lg opacity-0 hover:opacity-20 transition-opacity duration-300 -z-10"
+              />
               PS
-            </button>
+            </motion.button>
           </motion.div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
-              {navigation.map((item) => (
+              {navigation.map((item, index) => (
                 <motion.button
                   key={item.name}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
-                  whileHover={{ y: -2 }}
-                  whileTap={{ y: 0 }}
+                  className="relative text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 px-4 py-2 text-sm font-medium transition-all duration-300 rounded-lg group"
+                  whileHover={{ 
+                    y: -3,
+                    transition: { type: "spring" as const, stiffness: 400, damping: 10 }
+                  }}
+                  whileTap={{ y: 0, scale: 0.98 }}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + index * 0.1, duration: 0.6 }}
                 >
-                  {item.name}
                   <motion.div
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"
-                    initial={{ scaleX: 0 }}
-                    whileHover={{ scaleX: 1 }}
-                    transition={{ duration: 0.2 }}
+                    className="absolute inset-0 bg-gradient-to-r from-primary-50 to-accent-50 dark:from-primary-900/20 dark:to-accent-900/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                  <span className="relative z-10">{item.name}</span>
+                  <motion.div
+                    className="absolute bottom-1 left-2 right-2 h-0.5 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full"
+                    initial={{ scaleX: 0, opacity: 0 }}
+                    whileHover={{ scaleX: 1, opacity: 1 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
                   />
                 </motion.button>
               ))}
@@ -91,8 +108,9 @@ export function Header() {
             
             {/* Mobile menu button */}
             <motion.button
-              className="md:hidden p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              className="md:hidden p-2 rounded-xl text-neutral-600 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 border border-transparent hover:border-neutral-200 dark:hover:border-neutral-700"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               {isMobileMenuOpen ? (
@@ -109,21 +127,31 @@ export function Header() {
           {isMobileMenuOpen && (
             <motion.div
               className="md:hidden"
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.2 }}
+              initial={{ opacity: 0, height: 0, y: -10 }}
+              animate={{ opacity: 1, height: "auto", y: 0 }}
+              exit={{ opacity: 0, height: 0, y: -10 }}
+              transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] as const }}
             >
-              <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
-                {navigation.map((item) => (
+              <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 dark:bg-neutral-900/95 backdrop-blur-xl border-t border-neutral-200/50 dark:border-neutral-700/50">
+                {navigation.map((item, index) => (
                   <motion.button
                     key={item.name}
                     onClick={() => handleNavClick(item.href)}
-                    className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
-                    whileHover={{ x: 4 }}
+                    className="group relative block w-full text-left px-4 py-3 text-base font-medium text-neutral-600 dark:text-neutral-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 dark:hover:from-primary-900/20 dark:hover:to-accent-900/20 rounded-xl transition-all duration-300 border border-transparent hover:border-primary-100 dark:hover:border-primary-800"
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -20 }}
+                    transition={{ delay: index * 0.1, duration: 0.3 }}
+                    whileHover={{ 
+                      x: 8,
+                      transition: { type: "spring" as const, stiffness: 400, damping: 20 }
+                    }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    {item.name}
+                    <motion.div
+                      className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-0 bg-gradient-to-b from-primary-500 to-accent-500 rounded-full group-hover:h-6 transition-all duration-300"
+                    />
+                    <span className="relative">{item.name}</span>
                   </motion.button>
                 ))}
               </div>

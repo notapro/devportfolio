@@ -106,6 +106,6 @@ export const featuredProjects: Project[] = [
       "Scalable text processing pipeline for large document collections"
     ],
     businessImpact: "IEEE publication demonstrating research excellence and early expertise in AI/ML, contributing to academic knowledge in NLP and establishing foundation for current AI/ML learning initiatives",
-    image: "/projects/research-nlp.jpg"
+    image: null
   }
 ];

@@ -4,61 +4,29 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github, Zap, Users, DollarSign, Code } from "lucide-react";
 import Image from "next/image";
 import { featuredProjects } from "@/data/projects";
+import { AnimatedSection, AnimatedItem } from "./animated-section";
 
 export function ProjectsSection() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut" as const,
-      },
-    },
-  };
-
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
+    <section id="projects" className="scroll-mt-20 py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-primary-50/20 via-white to-accent-50/20 dark:from-neutral-800 dark:via-neutral-900 dark:to-neutral-800">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            Featured Projects
+        <AnimatedSection className="text-center mb-16" direction="up" delay={0.1}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+            Featured{" "}
+            <span className="bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto leading-relaxed">
             Innovative mobile games and technical solutions that have reached millions of users
           </p>
-        </motion.div>
+        </AnimatedSection>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8"
-        >
+        <AnimatedSection className="grid grid-cols-1 lg:grid-cols-2 gap-8" direction="up" delay={0.2} stagger>
           {featuredProjects.map((project) => (
-            <motion.div
+            <AnimatedItem
               key={project.id}
-              variants={itemVariants}
-              className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
-              whileHover={{ y: -5 }}
+              className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group hover:-translate-y-1"
             >
               {/* Project Image */}
               <div className="h-48 relative overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600">
@@ -170,9 +138,9 @@ export function ProjectsSection() {
                   )}
                 </div>
               </div>
-            </motion.div>
+            </AnimatedItem>
           ))}
-        </motion.div>
+        </AnimatedSection>
 
         {/* Stats Section */}
         <motion.div

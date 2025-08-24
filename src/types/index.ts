@@ -16,7 +16,7 @@ export interface Project {
   technologies: string[];
   features: string[];
   businessImpact: string;
-  image?: string;
+  image?: string | null;
   liveUrl?: string;
   githubUrl?: string;
 }
@@ -38,6 +38,8 @@ export interface PersonalInfo {
   bio: string;
   location: string;
   email: string;
+  phone?: string;
+  website?: string;
   linkedin: string;
   github: string;
   resumeUrl: string;
