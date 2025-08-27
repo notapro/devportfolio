@@ -6,10 +6,10 @@ export const experiences: Experience[] = [
     title: "Principal Software Engineer - 2",
     company: "PlaySimple Games",
     period: "July 2024 - Present",
-    description: "Leading engineering teams across 2 successful mobile applications with combined $30K+ daily revenue and 225K+ DAU. Building modular component architecture that promotes reusability between products, reducing development time by 30% while maintaining 99.5% system reliability targets.",
+    description: "Leading engineering teams across 2 successful mobile applications with combined $50k+ daily revenue and 400k+ DAU. Building modular component architecture that promotes reusability between products, reducing development time by 30% while maintaining 99.5% system reliability targets.",
     technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Firebase Analytics", "Jenkins", "Modular Architecture"],
     achievements: [
-      "Leading teams for Tile Match ($30K daily revenue, 225K DAU) and Tile Empire with 99.5% system reliability targets",
+      "Leading teams for Tile Match ($50k daily revenue, 400k DAU) and Tile Empire with 99.5% system reliability targets",
       "Built modular component architecture reducing development time by 30% while maintaining enterprise-grade reliability",
       "Mentoring technical artists and developers while collaborating with senior leadership on strategic planning"
     ]

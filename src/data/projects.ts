@@ -4,8 +4,8 @@ export const featuredProjects: Project[] = [
   {
     id: "tile-match-empire",
     title: "Tile Match & Tile Empire",
-    description: "Leading concurrent mobile applications generating $30K combined daily revenue with 225K DAU and 99.5% system reliability",
-    longDescription: "Currently leading engineering teams for Tile Match and Tile Empire as Principal Software Engineer - 2. These concurrent mobile applications represent the latest evolution in PlaySimple's product portfolio. Maintaining strict 99.5% reliability targets while achieving 5-second load times and consistent 75 FPS performance across all device tiers. Built innovative modular component architecture that promotes reusability between applications, reducing development time by 30% and establishing new engineering standards.",
+    description: "Leading concurrent mobile applications generating $50k combined daily revenue with 400k DAU and 99.5% system reliability",
+    longDescription: "Leading engineering teams for Tile Match and Tile Empire as Principal Software Engineer - 2. These mobile applications generate $50k combined daily revenue while maintaining 99.5% reliability across 400k daily active users. Built innovative modular architecture enabling 30% faster development cycles and established new engineering standards for cross-application reusability.",
     technologies: ["Unity", "C#", "Golang", "ScyllaDB", "Firebase Analytics", "Modular Architecture", "Performance Optimization", "Real-time Analytics", "Cross-game Systems"],
     features: [
       "Modular component architecture enabling 30% faster development across titles",
@@ -16,14 +16,14 @@ export const featuredProjects: Project[] = [
       "Enterprise-grade monitoring and alerting systems maintaining 99.5% uptime",
       "Automated content generation tools reducing designer workload by 40%"
     ],
-    businessImpact: "$30K combined daily revenue with 225K daily active users, maintaining 99.5% system reliability targets and setting new performance benchmarks for PlaySimple Games",
+    businessImpact: "$50k combined daily revenue ($11M+ annual run rate) with 400k daily active users, maintaining 99.5% system reliability and setting new performance benchmarks across the platform",
     image: "/projects/tile-match.webp"
   },
   {
     id: "central-login-system",
     title: "Enterprise Login System",
     description: "Scalable authentication system serving 3M+ daily active users across entire PlaySimple ecosystem with 99.9% uptime",
-    longDescription: "Architected and built enterprise-grade central authentication system serving 3M+ daily active users across the entire PlaySimple ecosystem. This critical infrastructure project utilized Golang and ScyllaDB, initially hosted on AWS and later migrated to DigitalOcean for cost optimization. The system handles massive scale authentication with 99.9% uptime, enterprise-grade security, and seamless cross-application user progression. This foundational system enables unified user experiences across all PlaySimple products.",
+    longDescription: "Architected enterprise-grade authentication system serving 3M+ daily users across the entire platform ecosystem. Built with Golang and ScyllaDB, achieving 99.9% uptime while handling massive scale with enterprise security standards. Successfully migrated from AWS to DigitalOcean, optimizing costs while maintaining performance and enabling unified user experiences across all products.",
     technologies: ["Golang", "ScyllaDB", "AWS", "DigitalOcean", "Microservices Architecture", "Redis", "Load Balancing", "Enterprise Security", "Cross-platform APIs"],
     features: [
       "Scalable microservices architecture handling 3M+ daily authentication requests",
@@ -34,14 +34,14 @@ export const featuredProjects: Project[] = [
       "Seamless migration from AWS to DigitalOcean with zero downtime",
       "Real-time user analytics and behavior tracking across all titles"
     ],
-    businessImpact: "Enabling seamless experience for 3M+ daily active users across entire PlaySimple portfolio, reducing authentication latency by 60% and supporting company's scaling to multiple successful products",
+    businessImpact: "Enables seamless authentication for 3M+ daily active users across entire platform portfolio, reducing authentication latency by 60% and supporting enterprise-scale infrastructure serving millions",
     image: "/projects/login-system.jpg"
   },
   {
     id: "destination-solitaire",
     title: "Destination Solitaire",
     description: "Travel-themed solitaire game built from conception, leading 5-developer team for 2+ years with innovative progression systems",
-    longDescription: "Designed and developed Destination Solitaire from initial conception as Principal Software Engineer, leading a dedicated 5-developer team for over 2 years. This innovative twist on classic solitaire combines card gameplay with travel progression, where players visit different cities by completing increasingly challenging puzzles. The game features cross-platform architecture, seamless progression systems, and sophisticated stamp collection mechanics that drive long-term engagement.",
+    longDescription: "Designed and developed Destination Solitaire from conception, leading a 5-developer team for 2+ years. This travel-themed card application combines traditional gameplay with progression mechanics, featuring cross-platform architecture and sophisticated collection systems driving long-term user engagement across iOS and Android platforms.",
     technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Cross-platform Architecture", "Real-time Sync", "Progressive Content Systems"],
     features: [
       "Innovative travel-themed progression system with 200+ global destinations",
@@ -52,14 +52,14 @@ export const featuredProjects: Project[] = [
       "Dynamic difficulty adjustment based on player skill and engagement patterns",
       "Rich visual design with authentic city landmarks and cultural elements"
     ],
-    businessImpact: "Successfully launched and maintained for 2+ years with consistent user engagement, positive App Store ratings (4.5+ stars), and strong player retention metrics contributing to PlaySimple's casual gaming portfolio",
+    businessImpact: "Successfully launched and maintained for 2+ years with consistent user engagement, 4.5+ star App Store ratings, and strong retention metrics contributing to the company's product portfolio growth",
     image: "/projects/destination-solitaire.webp"
   },
   {
     id: "wordwars",
     title: "WordWars",
     description: "Multiplayer word game achieving $70K peak daily revenue with sophisticated AI and real-time PvP systems supporting thousands of concurrent users",
-    longDescription: "Led technical development of WordWars as Senior Software Engineer, transforming it from concept to PlaySimple's most successful word game with $70K peak daily revenue. Built sophisticated AI-based adaptive adversary system using Branch and Bound algorithms with memory-optimized Trie structures. The game features real-time PvP communication and chat systems capable of supporting thousands of concurrent users, establishing new standards for multiplayer word gaming experiences.",
+    longDescription: "Led technical development of WordWars, transforming it into the platform's most successful word application with $70K peak daily revenue. Built sophisticated AI-based adversary system using Branch and Bound algorithms with memory-optimized Trie structures. Features real-time PvP communication supporting thousands of concurrent users, establishing new standards for multiplayer experiences.",
     technologies: ["Unity", "C#", "Golang", "MongoDB", "Redis", "Branch and Bound Algorithms", "Trie Structures", "Real-time Networking", "WebSocket Communications", "AI Systems"],
     features: [
       "AI-based adaptive adversary system using advanced Branch and Bound algorithms for optimal word finding",
@@ -70,14 +70,14 @@ export const featuredProjects: Project[] = [
       "Advanced matchmaking system ensuring balanced and engaging player experiences",
       "Crisis recovery capabilities demonstrated through 97% to 99.3% crash-free rate improvement"
     ],
-    businessImpact: "$70K peak daily revenue making it PlaySimple's leading word game, serving millions of players worldwide and establishing the company's dominance in the multiplayer word game category",
+    businessImpact: "$70K peak daily revenue ($25M+ annual run rate) establishing platform dominance in the multiplayer word application category, serving millions of users worldwide with enterprise-grade reliability",
     image: "/projects/wordwars.png"
   },
   {
     id: "daily-themed-crossword",
     title: "Daily Themed Crossword",
     description: "Multi-platform crossword game with innovative automated content generation reducing creation time by 10% and successful global launch",
-    longDescription: "Spearheaded Daily Themed Crossword development and multi-platform launch as Software Engineer, guiding a team of 3 developers through feature development and release management. Created innovative crossword grid generator algorithm that reduced content creation time by 10%, along with robust data replication tools ensuring safe content transfer across all PlaySimple titles. The game features daily themed content across multiple categories including Movies, Sports, Technology, Games, History, and Architecture.",
+    longDescription: "Spearheaded Daily Themed Crossword development and multi-platform launch, guiding a team of 3 developers. Created innovative crossword grid generator reducing content creation time by 10%, along with robust data replication tools ensuring safe content transfer across all platform products. Features daily themed content across multiple categories including Movies, Sports, Technology, and History.",
     technologies: ["Unity", "C#", "Cocos2d-JS", "Golang", "MongoDB", "Redis", "Content Generation Algorithms", "Data Replication Systems", "Cross-platform Development"],
     features: [
       "Automated crossword grid generation algorithm reducing manual content creation by 10%",
@@ -88,7 +88,7 @@ export const featuredProjects: Project[] = [
       "Advanced hint and help systems improving player experience and retention",
       "Performance optimization ensuring smooth gameplay on all device tiers"
     ],
-    businessImpact: "Successful multi-platform launch with strong user adoption, 10% improvement in content creation efficiency, and positive reception establishing PlaySimple's presence in the crossword gaming category",
+    businessImpact: "Successful multi-platform launch with strong user adoption, 10% improvement in content creation efficiency, and positive market reception establishing strong presence in the crossword application category",
     image: "/projects/daily-crossword.png"
   },
   {
