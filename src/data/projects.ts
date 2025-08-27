@@ -4,8 +4,8 @@ export const featuredProjects: Project[] = [
   {
     id: "tile-match-empire",
     title: "Tile Match & Tile Empire",
-    description: "Leading concurrent mobile puzzle games generating $30K combined daily revenue with 225K DAU and 99.5% stability",
-    longDescription: "Currently leading engineering teams for Tile Match and Tile Empire as Principal Software Engineer - 2. These concurrent mobile puzzle games represent the latest evolution in PlaySimple's casual gaming portfolio. Maintaining strict 99.5% stability targets while achieving 5-second load times and consistent 75 FPS performance across all device tiers. Built innovative modular component architecture that promotes reusability between games, reducing development time by 30% and establishing new engineering standards.",
+    description: "Leading concurrent mobile applications generating $30K combined daily revenue with 225K DAU and 99.5% system reliability",
+    longDescription: "Currently leading engineering teams for Tile Match and Tile Empire as Principal Software Engineer - 2. These concurrent mobile applications represent the latest evolution in PlaySimple's product portfolio. Maintaining strict 99.5% reliability targets while achieving 5-second load times and consistent 75 FPS performance across all device tiers. Built innovative modular component architecture that promotes reusability between applications, reducing development time by 30% and establishing new engineering standards.",
     technologies: ["Unity", "C#", "Golang", "ScyllaDB", "Firebase Analytics", "Modular Architecture", "Performance Optimization", "Real-time Analytics", "Cross-game Systems"],
     features: [
       "Modular component architecture enabling 30% faster development across titles",
@@ -16,25 +16,25 @@ export const featuredProjects: Project[] = [
       "Enterprise-grade monitoring and alerting systems maintaining 99.5% uptime",
       "Automated content generation tools reducing designer workload by 40%"
     ],
-    businessImpact: "$30K combined daily revenue with 225K daily active users, maintaining 99.5% stability targets and setting new performance benchmarks for PlaySimple Games",
+    businessImpact: "$30K combined daily revenue with 225K daily active users, maintaining 99.5% system reliability targets and setting new performance benchmarks for PlaySimple Games",
     image: "/projects/tile-match.webp"
   },
   {
     id: "central-login-system",
     title: "Enterprise Login System",
-    description: "Scalable authentication system serving 3M+ daily active users across entire PlaySimple Games ecosystem with 99.9% uptime",
-    longDescription: "Architected and built enterprise-grade central login system serving 3M+ daily active users across the entire PlaySimple Games ecosystem. This critical infrastructure project utilized Golang and ScyllaDB, initially hosted on AWS and later migrated to DigitalOcean for cost optimization. The system handles massive scale authentication with 99.9% uptime, enterprise-grade security, and seamless cross-game user progression. This foundational system enables unified player experiences across all PlaySimple titles.",
+    description: "Scalable authentication system serving 3M+ daily active users across entire PlaySimple ecosystem with 99.9% uptime",
+    longDescription: "Architected and built enterprise-grade central authentication system serving 3M+ daily active users across the entire PlaySimple ecosystem. This critical infrastructure project utilized Golang and ScyllaDB, initially hosted on AWS and later migrated to DigitalOcean for cost optimization. The system handles massive scale authentication with 99.9% uptime, enterprise-grade security, and seamless cross-application user progression. This foundational system enables unified user experiences across all PlaySimple products.",
     technologies: ["Golang", "ScyllaDB", "AWS", "DigitalOcean", "Microservices Architecture", "Redis", "Load Balancing", "Enterprise Security", "Cross-platform APIs"],
     features: [
       "Scalable microservices architecture handling 3M+ daily authentication requests",
-      "Multi-game authentication and authorization with unified user profiles",
+      "Multi-application authentication and authorization with unified user profiles",
       "99.9% uptime with enterprise-grade reliability and disaster recovery",
       "Cross-platform user progression tracking and synchronization",
       "Advanced security features including fraud prevention and account protection",
       "Seamless migration from AWS to DigitalOcean with zero downtime",
       "Real-time user analytics and behavior tracking across all titles"
     ],
-    businessImpact: "Enabling seamless experience for 3M+ daily active users across entire PlaySimple portfolio, reducing authentication latency by 60% and supporting company's scaling to multiple successful titles",
+    businessImpact: "Enabling seamless experience for 3M+ daily active users across entire PlaySimple portfolio, reducing authentication latency by 60% and supporting company's scaling to multiple successful products",
     image: "/projects/login-system.jpg"
   },
   {
