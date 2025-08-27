@@ -3,27 +3,21 @@
 import { motion } from "framer-motion";
 import { 
   Code2, 
-  Database, 
   Server, 
-  Gamepad2, 
   Users, 
-  BarChart3,
-  Wrench,
   Zap,
-  BrainCircuit
+  BrainCircuit,
+  Gamepad2,
+  Database
 } from "lucide-react";
 import { skills } from "@/data/skills";
 import { AnimatedSection, AnimatedItem } from "./animated-section";
 
 const categoryIcons = {
-  "Programming Languages": Code2,
-  "Game Development": Gamepad2,
+  "Core Technologies": Code2,
   "Backend & Infrastructure": Server,
-  "Databases & Storage": Database,
-  "Cloud & DevOps": Wrench,
   "Leadership & Management": Users,
-  "Performance & Optimization": Zap,
-  "Analytics & Business Intelligence": BarChart3,
+  "Performance & Analytics": Zap,
   "Emerging Technologies": BrainCircuit,
 };
 
