@@ -73,7 +73,7 @@ export function Footer() {
           </div>
 
           {/* Quick stats */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -85,7 +85,7 @@ export function Footer() {
             <span className="font-medium">15M+ Downloads</span>
             <span className="text-accent-400">•</span>
             <span className="font-medium">$85M+ Revenue</span>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </footer>
