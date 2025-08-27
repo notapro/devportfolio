@@ -57,7 +57,7 @@ export function HeroSection() {
       >
         <motion.div
           variants={itemVariants}
-          className="mb-8"
+          className="mb-4"
         >
           <motion.span 
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-primary-100 to-accent-100 text-primary-700 dark:from-primary-900/30 dark:to-accent-900/30 dark:text-primary-300 border border-primary-200/50 dark:border-primary-700/50 backdrop-blur-sm shadow-soft mb-6"
@@ -65,8 +65,10 @@ export function HeroSection() {
             animate="animate"
           >
             <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" as const }}
+              /* Disabling rotation animation of map pin.
+              // animate={{ rotate: 360 }}
+              // transition={{ duration: 20, repeat: Infinity, ease: "linear" as const }}
+              */
             >
               <MapPin className="h-4 w-4" />
             </motion.div>
@@ -76,7 +78,7 @@ export function HeroSection() {
 
         <motion.h1
           variants={itemVariants}
-          className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-8"
+          className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-6"
         >
           <span className="block text-neutral-800 dark:text-neutral-200 mb-2">
             Hi, I&apos;m
@@ -99,7 +101,7 @@ export function HeroSection() {
 
         <motion.h2
           variants={itemVariants}
-          className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold text-neutral-700 dark:text-neutral-300 mb-6 leading-tight"
+          className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-semibold text-neutral-700 dark:text-neutral-300 mb-8 leading-tight"
         >
           <motion.span
             initial={{ opacity: 0, x: -20 }}
@@ -124,7 +126,7 @@ export function HeroSection() {
           </motion.p>
 
           <motion.p
-            className="text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed"
+            className="text-base sm:text-lg text-neutral-600 dark:text-neutral-400 max-w-4xl mx-auto leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.4, duration: 1 }}
@@ -135,7 +137,7 @@ export function HeroSection() {
 
         <motion.div
           variants={itemVariants}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8"
         >
           <motion.a
             href={personalInfo.resumeUrl}
@@ -245,7 +247,7 @@ export function HeroSection() {
 
         <motion.div
           variants={itemVariants}
-          className="mt-24 mb-24"
+          className="mt-12 mb-8"
         >
           <motion.div
             className="group w-12 h-12 border-2 border-primary-300 dark:border-primary-600 rounded-full flex items-center justify-center mx-auto cursor-pointer bg-gradient-to-b from-transparent to-primary-50 dark:to-primary-900/20 hover:border-primary-400 dark:hover:border-primary-500 hover:shadow-glow-sm transition-all duration-300"
