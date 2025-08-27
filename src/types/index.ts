@@ -21,9 +21,12 @@ export interface Project {
   githubUrl?: string;
 }
 
+export type ProficiencyLevel = 'Expert' | 'Advanced' | 'Intermediate' | 'Beginner';
+
 export interface SkillItem {
   name: string;
-  proficiency: number; // 0-100
+  yearsOfExperience: number;
+  proficiencyLevel: ProficiencyLevel;
 }
 
 export interface Skill {

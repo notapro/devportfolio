@@ -8,7 +8,9 @@ import {
   Gamepad2, 
   Users, 
   BarChart3,
-  Wrench
+  Wrench,
+  Zap,
+  BrainCircuit
 } from "lucide-react";
 import { skills } from "@/data/skills";
 import { AnimatedSection, AnimatedItem } from "./animated-section";
@@ -17,10 +19,12 @@ const categoryIcons = {
   "Programming Languages": Code2,
   "Game Development": Gamepad2,
   "Backend & Infrastructure": Server,
-  "Databases": Database,
-  "DevOps & Tools": Wrench,
+  "Databases & Storage": Database,
+  "Cloud & DevOps": Wrench,
   "Leadership & Management": Users,
-  "Analytics & Data": BarChart3,
+  "Performance & Optimization": Zap,
+  "Analytics & Business Intelligence": BarChart3,
+  "Emerging Technologies": BrainCircuit,
 };
 
 export function SkillsSection() {
@@ -51,7 +55,7 @@ export function SkillsSection() {
         </AnimatedSection>
 
         <AnimatedSection className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" direction="up" delay={0.2} stagger>
-          {skills.map((skillCategory, categoryIndex) => {
+          {skills.map((skillCategory) => {
             const IconComponent = categoryIcons[skillCategory.category as keyof typeof categoryIcons] || Code2;
             
             return (
@@ -69,35 +73,47 @@ export function SkillsSection() {
                 </div>
 
                 <div className="space-y-3">
-                  {skillCategory.items.map((skillItem, skillIndex) => (
-                    <motion.div
-                      key={skillItem.name}
-                      variants={skillVariants}
-                      className="group/skill"
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
-                          {skillItem.name}
-                        </span>
-                        <span className="text-xs text-neutral-500 dark:text-neutral-400 font-medium px-2 py-1 bg-neutral-100 dark:bg-neutral-700 rounded-full">
-                          {skillItem.proficiency}%
-                        </span>
-                      </div>
-                      <div className="h-2.5 bg-neutral-100 dark:bg-neutral-700 rounded-full overflow-hidden border border-neutral-200/50 dark:border-neutral-600/50">
-                        <motion.div
-                          className="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full shadow-sm"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skillItem.proficiency}%` }}
-                          transition={{ 
-                            duration: 1, 
-                            delay: categoryIndex * 0.05 + skillIndex * 0.02,
-                            ease: "easeOut" as const 
-                          }}
-                          viewport={{ once: true }}
-                        />
-                      </div>
-                    </motion.div>
-                  ))}
+                  {skillCategory.items.map((skillItem) => {
+                    const getProficiencyColor = (level: string) => {
+                      switch (level) {
+                        case 'Expert':
+                          return 'from-emerald-500 to-green-600 dark:from-emerald-400 dark:to-green-500';
+                        case 'Advanced':
+                          return 'from-blue-500 to-indigo-600 dark:from-blue-400 dark:to-indigo-500';
+                        case 'Intermediate':
+                          return 'from-amber-500 to-orange-600 dark:from-amber-400 dark:to-orange-500';
+                        case 'Beginner':
+                          return 'from-slate-500 to-gray-600 dark:from-slate-400 dark:to-gray-500';
+                        default:
+                          return 'from-primary-500 to-accent-500';
+                      }
+                    };
+
+                    return (
+                      <motion.div
+                        key={skillItem.name}
+                        variants={skillVariants}
+                        className="group/skill"
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex-1">
+                            <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
+                              {skillItem.name}
+                            </span>
+                            <div className="flex items-center gap-2 mt-1">
+                              <span className="text-xs text-neutral-500 dark:text-neutral-400">
+                                {skillItem.yearsOfExperience} year{skillItem.yearsOfExperience !== 1 ? 's' : ''}
+                              </span>
+                              <div className="w-1 h-1 bg-neutral-300 dark:bg-neutral-600 rounded-full"></div>
+                              <span className={`text-xs font-medium px-2 py-1 rounded-full bg-gradient-to-r ${getProficiencyColor(skillItem.proficiencyLevel)} text-white shadow-sm`}>
+                                {skillItem.proficiencyLevel}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               </AnimatedItem>
             );
@@ -126,21 +142,21 @@ export function SkillsSection() {
               <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
                 <Code2 className="h-8 w-8 text-accent-600 dark:text-accent-400" />
               </div>
-              <p className="font-semibold text-neutral-900 dark:text-neutral-100">TypeScript</p>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">Frontend</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
-                <Server className="h-8 w-8 text-primary-600 dark:text-primary-400" />
-              </div>
-              <p className="font-semibold text-neutral-900 dark:text-neutral-100">Node.js</p>
+              <p className="font-semibold text-neutral-900 dark:text-neutral-100">Golang</p>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">Backend</p>
             </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
-                <Database className="h-8 w-8 text-accent-600 dark:text-accent-400" />
+                <Database className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+              </div>
+              <p className="font-semibold text-neutral-900 dark:text-neutral-100">ScyllaDB</p>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400">Database</p>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
+                <Server className="h-8 w-8 text-accent-600 dark:text-accent-400" />
               </div>
               <p className="font-semibold text-neutral-900 dark:text-neutral-100">AWS</p>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">Cloud</p>
