@@ -8,17 +8,18 @@ import {
   Zap,
   BrainCircuit,
   Gamepad2,
-  Database
+  Database,
+  Settings
 } from "lucide-react";
 import { skills } from "@/data/skills";
 import { AnimatedSection, AnimatedItem } from "./animated-section";
 
 const categoryIcons = {
-  "Core Technologies": Code2,
-  "Backend & Infrastructure": Server,
-  "Leadership & Management": Users,
-  "Performance & Analytics": Zap,
-  "Emerging Technologies": BrainCircuit,
+  "Programming & Frameworks": Code2,
+  "System Architecture & Design": Settings,
+  "Data & Infrastructure": Database,
+  "Performance & Quality": Zap,
+  "Leadership & Development": Users,
 };
 
 export function SkillsSection() {
