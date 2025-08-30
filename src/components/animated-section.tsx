@@ -23,7 +23,7 @@ export function AnimatedSection({
   once = true,
 }: AnimatedSectionProps) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once, amount: 0.1 });
+  const isInView = useInView(ref, { once, amount: 0.05, margin: "0px 0px -100px 0px" });
 
   const directions = {
     up: { y: 40, x: 0, scale: 1 },

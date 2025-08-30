@@ -147,7 +147,7 @@ export function ProjectsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.05, margin: "0px 0px -100px 0px" }}
           className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8"
         >
           <div className="text-center">

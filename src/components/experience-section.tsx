@@ -90,7 +90,7 @@ export function ExperienceSection() {
                             delay: index * 0.05 + achievementIndex * 0.03,
                             duration: 0.4 
                           }}
-                          viewport={{ once: true }}
+                          viewport={{ once: true, amount: 0.05, margin: "0px 0px -100px 0px" }}
                         >
                           <div className="w-1.5 h-1.5 bg-accent-500 rounded-full mt-2 flex-shrink-0" />
                           {achievement}
