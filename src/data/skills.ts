@@ -58,7 +58,8 @@ export const skills: Skill[] = [
       { name: "Cross-functional Collaboration", yearsOfExperience: 8, proficiencyLevel: "Expert" },
       { name: "Process Improvement", yearsOfExperience: 5, proficiencyLevel: "Advanced" },
       { name: "Sprint Planning", yearsOfExperience: 4, proficiencyLevel: "Intermediate" },
-      { name: "Large Language Models (LLMs)", yearsOfExperience: 1, proficiencyLevel: "Beginner" }
+      { name: "AI-Enhanced Development Operations", yearsOfExperience: 1, proficiencyLevel: "Intermediate" },
+      { name: "Context Engineering & LLM Integration", yearsOfExperience: 1, proficiencyLevel: "Intermediate" }
     ]
   }
 ];

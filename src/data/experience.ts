@@ -11,6 +11,7 @@ export const experiences: Experience[] = [
     achievements: [
       "Leading teams for Tile Match ($50k daily revenue, 400k DAU) and Tile Empire with 99.5% system reliability targets",
       "Built modular component architecture reducing development time by 30% while maintaining enterprise-grade reliability",
+      "Pioneered AI-enhanced development operations through Cursor IDE integration and context engineering, improving team efficiency by 30% and code accuracy to 90%",
       "Mentoring technical artists and developers while collaborating with senior leadership on strategic planning"
     ]
   },

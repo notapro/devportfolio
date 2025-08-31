@@ -132,6 +132,14 @@ export function SkillsSection() {
               <p className="font-semibold text-neutral-900 dark:text-neutral-100">Unity</p>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">Game Engine</p>
             </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
+                <Code2 className="h-8 w-8 text-accent-600 dark:text-accent-400" />
+              </div>
+              <p className="font-semibold text-neutral-900 dark:text-neutral-100">C#</p>
+              <p className="text-sm text-neutral-600 dark:text-neutral-400">Client</p>
+            </div>
             
             <div className="text-center">
               <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
@@ -147,14 +155,6 @@ export function SkillsSection() {
               </div>
               <p className="font-semibold text-neutral-900 dark:text-neutral-100">ScyllaDB</p>
               <p className="text-sm text-neutral-600 dark:text-neutral-400">Database</p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-white to-neutral-50 dark:from-neutral-800 dark:to-neutral-700 rounded-full flex items-center justify-center mx-auto mb-3 shadow-medium border border-neutral-200/50 dark:border-neutral-600/50 hover:scale-110 transition-transform duration-300">
-                <Server className="h-8 w-8 text-accent-600 dark:text-accent-400" />
-              </div>
-              <p className="font-semibold text-neutral-900 dark:text-neutral-100">AWS</p>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400">Cloud</p>
             </div>
           </div>
         </AnimatedSection>
