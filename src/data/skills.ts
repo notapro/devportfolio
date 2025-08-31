@@ -52,11 +52,10 @@ export const skills: Skill[] = [
   {
     category: "Leadership & Development",
     items: [
-      { name: "Team Leadership", yearsOfExperience: 7, proficiencyLevel: "Expert" },
+      { name: "Solution Architect", yearsOfExperience: 6, proficiencyLevel: "Expert" },
+      { name: "Team Leadership", yearsOfExperience: 6, proficiencyLevel: "Expert" },
       { name: "Technical Mentoring", yearsOfExperience: 7, proficiencyLevel: "Advanced" },
-      { name: "Code Review", yearsOfExperience: 8, proficiencyLevel: "Expert" },
       { name: "Cross-functional Collaboration", yearsOfExperience: 8, proficiencyLevel: "Expert" },
-      { name: "Process Improvement", yearsOfExperience: 5, proficiencyLevel: "Advanced" },
       { name: "Sprint Planning", yearsOfExperience: 4, proficiencyLevel: "Intermediate" },
       { name: "AI-Enhanced Development Operations", yearsOfExperience: 1, proficiencyLevel: "Intermediate" },
       { name: "Context Engineering & LLM Integration", yearsOfExperience: 1, proficiencyLevel: "Intermediate" }
