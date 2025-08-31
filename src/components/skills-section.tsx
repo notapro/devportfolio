@@ -3,10 +3,8 @@
 import { motion } from "framer-motion";
 import { 
   Code2, 
-  Server, 
   Users, 
   Zap,
-  BrainCircuit,
   Gamepad2,
   Database,
   Settings
