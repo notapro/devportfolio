@@ -16,12 +16,12 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Prakhar Sethi - Principal Software Engineer - 2",
-  description: "Principal Software Engineer - 2 with 9+ years at PlaySimple Games. Built systems serving 3M+ users, led teams delivering $100K+ daily revenue games, expert in Unity, C#, Golang, and scalable gaming infrastructure.",
-  keywords: "Principal Software Engineer, Mobile Games, Unity, C#, Golang, Scalable Systems, Team Leadership, PlaySimple Games, Game Development, Backend Architecture",
+  description: "Principal Software Engineer - 2 with 9+ years at PlaySimple. Built systems serving 3M+ users, led teams delivering $100K+ daily revenue games, expert in Unity, C#, Golang, and scalable gaming infrastructure.",
+  keywords: "Principal Software Engineer, Mobile Games, Unity, C#, Golang, Scalable Systems, Team Leadership, PlaySimple, Game Development, Backend Architecture",
   authors: [{ name: "Prakhar Sethi" }],
   openGraph: {
     title: "Prakhar Sethi - Principal Software Engineer - 2",
-    description: "Principal Software Engineer - 2 at PlaySimple Games. 9+ years building scalable mobile games serving millions of users.",
+    description: "Principal Software Engineer - 2 at PlaySimple. 9+ years building scalable mobile games serving millions of users.",
     type: "website",
   },
 };

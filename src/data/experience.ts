@@ -4,7 +4,7 @@ export const experiences: Experience[] = [
   {
     id: "principal-engineer-2",
     title: "Principal Software Engineer - 2",
-    company: "PlaySimple Games",
+    company: "PlaySimple - MTG",
     period: "July 2024 - Present",
     description: "Leading engineering teams across 2 successful mobile applications with combined $50k+ daily revenue and 400k+ DAU. Building modular component architecture that promotes reusability between products, reducing development time by 30% while maintaining 99.5% system reliability targets.",
     technologies: ["Unity", "C#", "Golang", "Python", "ScyllaDB", "DigitalOcean", "Jenkins"],
@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
   {
     id: "principal-engineer-1",
     title: "Principal Software Engineer - 1", 
-    company: "PlaySimple Games",
+    company: "PlaySimple - MTG",
     period: "July 2020 - July 2024",
     description: "Architected and built enterprise-grade authentication system serving 3M+ daily active users across entire PlaySimple ecosystem. Led strategic product development including Destination Solitaire and managed critical recovery operations for WordWars.",
     technologies: ["Unity", "C#", "Golang", "Python", "ScyllaDB", "MongoDB", "Redis", "AWS", "DigitalOcean", "Jenkins"],
@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
   {
     id: "senior-engineer",
     title: "Senior Software Engineer",
-    company: "PlaySimple Games", 
+    company: "PlaySimple", 
     period: "July 2017 - July 2020",
     description: "Technical lead for WordWars, achieving remarkable success with $70K peak daily revenue. Led team of 4 developers while building sophisticated AI systems and real-time multiplayer infrastructure supporting thousands of concurrent users.",
     technologies: ["Unity", "C#", "Golang", "MongoDB", "Redis", "Real-time networking", "PvP systems"],
@@ -44,7 +44,7 @@ export const experiences: Experience[] = [
   {
     id: "software-engineer",
     title: "Software Engineer",
-    company: "PlaySimple Games",
+    company: "PlaySimple",
     period: "January 2017 - July 2017", 
     description: "Spearheaded Daily Themed Crossword development and multi-platform launch. Guided team of 3 developers in feature development and release management while creating innovative content generation systems.",
     technologies: ["Cocos2d-JS", "Golang", "Redis", "MongoDB", "Python"],
@@ -57,7 +57,7 @@ export const experiences: Experience[] = [
   {
     id: "associate-engineer", 
     title: "Associate Software Engineer",
-    company: "PlaySimple Games",
+    company: "PlaySimple",
     period: "July 2016 - January 2017",
     description: "Started professional career in mobile application development. Contributed to Jungle Rumble development while building foundational backend systems and establishing expertise in development technologies and cross-functional collaboration.",
     technologies: ["Cocos2d-JS", "Golang", "Redis", "MongoDB", "Git"],

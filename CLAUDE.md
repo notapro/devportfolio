@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. It showcases the career of a Principal Software Engineer with 9+ years of experience at PlaySimple Games, featuring responsive design, dark/light theme support, and smooth animations powered by Framer Motion.
+This is a personal portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. It showcases the career of a Principal Software Engineer with 9+ years of experience at PlaySimple, featuring responsive design, dark/light theme support, and smooth animations powered by Framer Motion.
 
 **Core Stack:**
 - Next.js 14.2.31 with App Router

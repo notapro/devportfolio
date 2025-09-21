@@ -21,10 +21,10 @@ export const featuredProjects: Project[] = [
   },
   {
     id: "central-login-system",
-    title: "Enterprise Login System",
+    title: "PS ID Authentication",
     description: "Scalable authentication system serving 3M+ daily active users across entire PlaySimple ecosystem with 99.9% uptime",
     longDescription: "Architected enterprise-grade authentication system serving 3M+ daily users across the entire platform ecosystem. Built with Golang and ScyllaDB, achieving 99.9% uptime while handling massive scale with enterprise security standards. Successfully migrated from AWS to DigitalOcean, optimizing costs while maintaining performance and enabling unified user experiences across all products.",
-    technologies: ["Golang", "ScyllaDB", "AWS", "DigitalOcean", "Microservices Architecture", "Redis", "Load Balancing", "Enterprise Security", "Cross-platform APIs"],
+    technologies: ["Golang", "ScyllaDB", "AWS", "DigitalOcean", "Microservices Architecture", "Redis", "Distributed System", "Load Balancing", "Enterprise Security", "Cross-platform APIs"],
     features: [
       "Scalable microservices architecture handling 3M+ daily authentication requests",
       "Multi-application authentication and authorization with unified user profiles",
@@ -42,7 +42,7 @@ export const featuredProjects: Project[] = [
     title: "Destination Solitaire",
     description: "Travel-themed solitaire game built from conception, leading 5-developer team for 2+ years with innovative progression systems",
     longDescription: "Designed and developed Destination Solitaire from conception, leading a 5-developer team for 2+ years. This travel-themed card application combines traditional gameplay with progression mechanics, featuring cross-platform architecture and sophisticated collection systems driving long-term user engagement across iOS and Android platforms.",
-    technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Cross-platform Architecture", "Real-time Sync", "Progressive Content Systems"],
+    technologies: ["Unity", "C#", "Golang", "ScyllaDB", "AWS", "DigitalOcean", "Cross-platform Architecture", "Progressive Content Systems"],
     features: [
       "Innovative travel-themed progression system with 200+ global destinations",
       "Cross-platform synchronization ensuring seamless experience across iOS and Android",

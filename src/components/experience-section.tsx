@@ -17,7 +17,7 @@ export function ExperienceSection() {
             </span>
           </h2>
           <p className="text-lg sm:text-xl text-neutral-600 dark:text-neutral-400 max-w-3xl mx-auto leading-relaxed">
-            9+ years of building scalable mobile games and leading engineering teams at PlaySimple Games
+            9+ years of building scalable mobile games and leading engineering teams at PlaySimple
           </p>
         </AnimatedSection>
 

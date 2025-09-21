@@ -1,6 +1,6 @@
 # Portfolio Website - Principal Software Engineer
 
-A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, showcasing 9+ years of mobile gaming experience at PlaySimple Games.
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS, showcasing 9+ years of mobile gaming experience at PlaySimple.
 
 ## 🚀 Features
 
